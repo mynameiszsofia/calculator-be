@@ -1,0 +1,32 @@
+{
+  "name": "calculator-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "node dist/index.js",
+    "dev": "rimraf dist && tsc-watch --onSuccess \"node --experimental-worker ./dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynameiszsofia/calculator-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "rimraf": "^4.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "tsc-watch": "^6.0.0"
+  }
+}
